@@ -1,0 +1,97 @@
+Siege Fortress Day
+Forest and Hills Day
+Desert Day
+Swamp Day
+Volcano Day
+Jungle Day
+Castle Schrade
+Crimson Battleground
+Arena with Ledge Day
+Arena with Pillar Day
+Snowy Mountains Day
+Town Siege Day
+Tower 1
+Tower 2
+Tower 3
+Forest and Hills Night
+Desert Night
+Swamp Night
+Volcano Night
+Jungle Night
+Snowy Mountains Night
+Town Siege night
+Siege Fortress Night
+Arena with Ledge Night
+Arena with Pillar Night
+Great Forest Day
+Great Forest Night
+Volcano 2 Day
+Volcano 2 Night
+Jungle Dream
+Gorge Day
+Gorge Night
+Unknown1
+Unknown2
+Battlefield Day
+Unknown3
+Unknown4
+Unknown5
+Unknown6
+Unknown7
+Unknown8
+Unknown9
+Unknown10
+Top of Great Forest
+Caravan Balloon Day
+Caravan Balloon Night
+Solitude Isle 1
+Solitude Isle 2
+Solitude Isle 3
+Highlands Day
+Highlands Night
+Tower with Nesthole
+Arena with Moat Day
+Arena with Moat Night
+Fortress Day
+Fortress Night
+Tidal Island Day
+Tidal Island Night
+Unknown11
+Polar Sea Day
+Polar Sea Night
+World's End
+Large Airship
+Flower Field Day
+Flower Field Night
+Deep Crater
+Bamboo Forest Day
+Bamboo Forest Night
+Battlefield 2 Day
+Unimplemented map
+1st Dist Tower 1
+1st Dist Tower 2
+2nd Dist Tower 1
+2nd Dist Tower 2
+Urgent Tower
+3rd Dist Tower
+3rd Dist Tower 2?
+4th Dist Tower
+White Lake Day
+White Lake Night
+Solitude Depths Slay 1
+Solitude Depths Slay 2?
+Solitude Depths Slay 3?
+Solitude Depths Slay 4?
+Solitude Depths Slay 5?
+Solitude Depths Support 1
+Solitude Depths Support 2
+Solitude Depths Support 3
+Solitude Depths Support 4
+Solitude Depths Support 5
+Cloud Viewing Fortress
+Painted Falls Day
+Painted Falls Night
+Sanctuary
+Hunter's Road
+Sacred Pinnacle
+Historic Site

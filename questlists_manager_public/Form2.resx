@@ -1,0 +1,318 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAedJREFUWEft
+        l80rRFEYhyeEjQXla0QWUqxQspAaar4/m5qFlQUWUnYsUIaVf8ICCwpZWYmVYoFBYaewYKIYslM87+3e
+        ujONmHFvLO5bT++ZO+e8v9859y7eY/sXEYvFCt1ud0UoFLIHAoE6jWg0Wsuzsng8XqBONT68Xm+Jz+dr
+        Q3AIphnPaPj9/klyPybamVcpRtVlxgWFuxFeQuyCfEO+1XENZ7ABI5FIpNFwExRegTt4xMAx+UDHoZiC
+        J8Yn5AlOo8nhcBSpy38fFE1S/BV2IcSRd2nwuxdm4Rze1DzHqfXp5+WCx+PpDIfDrWykWjlNCr5LcYys
+        u1yuetWXErJT2bHsnMWnzEsxltd0CPqTyoU9WKHeGLUaxMAHZDUgIS7l3bNglHlbcAXySlJ58gLPkICB
+        bw1IiAn+q2JeD0bGyQuwnA+s3yTfwwvjpR8Z0AIjxSyqgWbWtOSDfD/kbXijzn5OBowI0UBvTTQhYRmw
+        DFgGLAOWAcuAZUAMfNmSmREZBo5sNAVJxF9hhwdpTakZiIZoiSbjXTkBrS1/4GFmW24GCXTkCiDd+Lxy
+        McHZIj+yXUwMBy3RuCSvBoPBTv3VbJicdjUzA8SnYBC9Dtr+UuXDkK432+XUDJxOpx0D5cql5O/DZvsE
+        sP+n7hpuKpUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAydJREFUWEft
+        l09IVFEUxifLKA2sqKAiNMtpU6uJop2Ezd83OjM17gxtoYsgkIFCZjMtLCh3EbSJVm2EoqC2WUSQoGRa
+        VpQRbYyIokWLypp+33BfTPLmn82bTR34vHfOPef7zn33z3t6lmLt7e1rgsFgOBQKpSKRSEp9+cywu5bJ
+        ZOoQ3IXwKHhjMCqfxkyYe8ZMV4XD4SCiL8AP8FN9nkZIYybMPYtGow0UcBi8RTgrqC+fxkyYe/a/gH+n
+        gGQyuZKNvZHj1RIIBDaLPJvNLiujgFyMcpQrjv7+/nr5c8TlGMdpBSTbwQACI+AUAodisdhav9/fWKiA
+        np6eRn6vU6xywAj9AXGJ09CXNlsEgnHwDsyB66AT22JZ1hGJ8vt3AbRJ/FsVA64B5Sh3XFziNPSlraOj
+        o4mk4yTPA4nosvkIbuLvRujo4gJ41PJ18/uGidUlpfF5cbGkTYa+tOlG081G8iT4bojsIm5DeIbWLi4n
+        AobBLZAvrtxJcfX29lZ0S9bpUbN2aWY7a4jsIj6BKfDF+AT15csX/waegbS44Cx/E8q0aRBvUxGQPAX5
+        RXwFtpCTT+LK0QTaKtqA+aZEqt/JIx+C7AmtiG3RQlCMYod48juWLG6bCCBshewk7UyJIjQ2w6wV2/rX
+        4raxg5frLEOqD5BppyKMbxqkKj735ZiK0M2G0CAi2nBa83zxKY1xWbUo1qRV10SMSDM4geAE0IkQJuTT
+        mGvitkmAW20bosfAZYE175PPdXHbJMTLZj0z9grq1+R70BXTS0Ibh5nsBfuLQOPN5tXqaD6frz6RSGiP
+        FOVi2XxmyVZ7ON8HcZ7DOQYeFgIxdzlew/F43Ou01jp2xHjZD3pPFOUCd8BpYvd5+HOVH/q2XwB/nO1F
+        WCD2JW26q6trD4VsoqAGzYJ2A/7dGjMxpbh0rc8Re9ZDRy+QUgk2dN71/8AlZjvI04vR74RIr+6LtM9N
+        jFPuYkjzngpwGiwGJX4Ar8E0oo9pX4H3oNyJ2Hi0lAKqiVwBmk2llVcD2gdjKuAK0LrqSv1cI0hrluXL
+        qIAAuAAeAH2C1QL32cDnLcs68AsZznxlIsf1mgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQ9JREFUWEft
+        l7ERgzAMRdkjG6TKCLl0GJqMkA3Sp8gC3FFlCSahY4T0WYJIue87BRuwDKXenQrL0tfHR6NCg3PuWVXV
+        qIyeoinL8giZPDKH/wVrQE7HdDjSSfCXU0/ne+u6PuAqjdiX40qF0GmRWmfu2XGtgrRO6B+QWoYK737g
+        NFCiJrmf3N7kwGmgTE1SP/0kVzksEm+UqvEaOIbQH3sRg+bigXI1XgPHEDEkFh+KF73QGeVqvBaOIasF
+        GzEDZsAMmAEzYAbMgBlIMcBr1Lh5jYqABYUN9EiF0GWDog6p3WBNaDdIhQiXvz2OlwlcZcMarOV1V19X
+        Fu8drI0xy/ACSQ0txSAFMoM12vhSWhRfBXS7mj4U35UAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAyhJREFUWEe1
+        lztoFEEcxq+yEdHGws5Ci9goEsFokyLc+8KJXHkgFlaKASu1uCZgEAVBiSCWIYQQCFhICuUgIFocETFG
+        fEAgcmIUkihEweb8fet/cW/d3Xvs5oOPmf97dmZnZjfVLUZGRvbm8/kqnCsWi0u0a4VCYVtU33QztGdG
+        R0f3WFh8UGAATsIt2PJxxejXb0DFDFia/kCCcfgdKqnaBZ7wKk86WKlUdplbSn3psI9hn6fd9MSMm1tv
+        IHDWkjRJXstkMgfM1BHyVYxiLceimboDAasKJMn9Xgr7oVjyuA/yzdTRkKMVr5kqNsg3ZYNYNVUwcFg0
+        xylTJQZbEuWeNVU7MOiFC3dIAFpSq9H+YqLQVtMb24yz5p1g74ReTNX6t0URtGcTXfcweJZi0lHo1ELQ
+        wbG5k0/vwmZBM7Cl0zWloxOhpQPEfHYc1FtQTWajqimZkQDHzB4L5KnwMEPWbzhKH3Sa2gDmJCyZMGj2
+        rpDNZg/mcrmyrWmd9pz09J9BZyfRbqv1Q7VUU7Ul6FZrec/2IOBTUTHrNxRHgsfwJvI1+MVsy1DJj+Kz
+        Lp0fqiUf5XBGCVfM1gYVwOZMI+0F+MH6L7BdVL9UKp0w3Q+oy2iNxHfgbeSPsgUBm27R7cgBoL9EonmS
+        6htgCLnFrjmErob8SjKsyxfdZZPfWOxX+FL9IGB7CzcilwD9KezrtE/gXfiJdc+hq9J/xyCOI+43d/k3
+        0T1Xn/YGcuAtaFv/F2xEvoTlcnmfbPgcpn0PdbNdoehpWk35LTgNH8qf9rwKO8ERIP4kvpqt2Y7bkIRP
+        8TlGO4yPRj1th4n28gN4HftZc28D+qwGhE8dvoaf4W+oeuKECkQeROjvYXcGR0LE4rBj6ABitDPcQkFc
+        ZiaO7MhR7CkSxr/FXaBI7DIij/sFFMb24gLKRK5jLZEVCeP/xV1gjP1BwgAeWY4ghhd3gVOsTzLidLj4
+        C4udi7vAue+PUuK0Tfsv7oKgvj7LPUX7L+6C4J5/TMw/fnEXJOnq1yydTu/WrWh+yRR3QbLIn1MGpFvx
+        p0eXXHEvIn7PdYo2oJZsorfiqdQfyV5r4X1ksh0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABG9JREFUWEe1
+        l3loznEcxx8zyzFz5x6Wa2PI4x5r2ex+dsScLXMNuZuUiIclxB+EKLklIsoxIVc5QiaJltofCyVHoRzJ
+        9Xo/vuPx7Pc8+z178qlXn9/z/X6u3/f6fR9HbZKUlBSelZUVk5mZWYjejN5uB2y3wSaYm56e3rWgoKC+
+        CWlflNzlcvUmyIrs7OzL6Eo4zHMpSVYHArs12O00fnNTUlKambD2xOl0NsAxVsEIcga9F12BLk1LS+vD
+        c8dAZGRkdMJ/FFyCk/h1MaFrFyXnzfvguBbOgkbAhb6jgvLz81sZ04CCT7RJfhd6mubAYt68L6zDqUzJ
+        5WwKuhFMAampqZ3xOY5POeugl2n2L0qOYT+cNsB5HFcqudaCAvzXAuLi4iIwHIDDJvQF+JNc/d4F5OTk
+        tFUR0r4wUq2rV7ztAuSgZEoOF32TI2HMZ3/6bqkAdAy/x6EXoxeiF9C+EJbwPLF6xdsuQA5UPhvjBxif
+        gkJWcQJ6qMB5JInmqx+9DK0C5qD3wC6ete93wX4o0Sgoru0CzJY5AlVwFQ7htM+LA3CK9nPobBVMwK4k
+        HsjvAej+0vQ7mYbujGiE4tougAA94DbG12EBz1N8IcgkGEOxbXAJ++0ZWGwXoE6SlGN8EmJJEpWXl9cc
+        x3YcOu2rMQuvKWsj0h8Mf2O32+0pMOgC4ISc1IZugmMijIXxNpFtonxNjLoXwBu3xFnTsZsAB22yWz7y
+        VYyQCmA4G+IYT1sSUzLaDrIlVj/5KkZIBSD1CBReF+SrAKEWELKEVID2svY0fYMJ4DmQBDZDvPHuky3z
+        H/w5YFWAzyLUQWSHGouQtmO03SROD7VZip8RiMQxDaYSZJodjG26zgrF0MeJtjW0baSo9mqzFKsCdJgo
+        kA6kYGA3RJmDKIzkLUg+lJjOhIQEFeVZnDXEqoC6ir6sycnJrUgcD2MpQl/KInQKp2S34uLiBsb0r/iZ
+        ggicYiC2NkjQkzdvIx9iRMMs2g/DA6ikvwKtdbA+Nzc3zmzVv2JVgALiVAK6HQWEBLo/JBJHX8h5tN2H
+        9/Adfhq+wD36V2skNFKe5BKrAjDW/BXBktrAdgbrRTGS4Rptn03CLzz/QH+Fp/Tpk65bVZHWiie5xKoA
+        DZNWMW2W125vzGpXwTPRVehX6CugG9Q7eMzzDtCFpQqfPfh08CSXYKDr2D04XtdFiG8LWEqsZ3CX5+mG
+        c7CWpG70I/gIVzUNxtXh0A+cyuAMQzPM++3sgF87wyKCvwAVsRGtc2QGTMfuAvoTfKbvNL+jTXpPAa1p
+        WA4qYgu4wfIvlx+0FgZR/AS0hlvzX0k8nYwrQNe916BF+ZJ29z9Xe803jpqGEjp1KdXNOBiO4udC6/O9
+        lTgaBS08JdX/ybfwDT7RXwbD9TfApP8tKoI92plO4mRORte4F/oDe92GBumySpIRoBvyE/reoLUjPsAL
+        fuuPasE/O8BH6rE/G+kIllEw8AKR2tvypxjdkFeRUPP+HP2QNv25dZkPlTmSHY5feLyLj4+ktqIAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="label11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAA29JREFUWEft
+        l09IVGEUxd/YH6kkrCgTIsQMalkusk0YDs44/huFsUVClAshippFYGEobgvcWkIrV9VCMly5cpWbtDSt
+        lRAoYkUJIVna9DvjHRvHN+qM484Lh/e9757vnPu+9959M046UVpauruysrIQNBkKNWfp7Y1QKLRLhhUV
+        FQ84vhcCgcB9zSlntO0JGfj9/gIM74EPmP42jGkuGAwWbFsREvZ6vScxuwt01TKOGDTWXFicjBchQbb8
+        RFVV1S2MRhLMo7C5EXBb3IwV0d7enuXz+fKrq6ubMXmLwULM1AUL4oDm+vr6fK01mfRCAjU1NXkI3wBv
+        ZGBG60GcIXbrellZWd5WishiK48i1ggGwTxwM3SDuIM8sI3SSKcID9t+GJEQGAA/wV/gZuYGcbVmgNvR
+        IK1UivDwOuVyz4NsYz8icyboZrQetGaOAvrZhSDjQ5FIxGMeScMD+SDGARb0gu8m5GawGWitNHq5HQFp
+        y2PZam14aKc5kL3gOfgGloCbcCpQEdKSplce8lq2jAu2fD/bdQlSD5gFmTCPQVrS7JGHvLD8XwRbkw1K
+        SD6DNGML3IT+gK92TCUnSHNGHhRQIs+oeXFx8R5OzpHsAtNGXCPAQnW6CY59HH/E5wTmNfcaTIBk/WIJ
+        njy65Em33OvwxJ9i4jGJzxwXjbgKMgfvQBvnneBLfN6guU4e4DYg7pp2bVgkL69H+ng5nFzlZFQJIyQi
+        +qFh28J0Re1UB0hWQAd65zEPM078YMVDXqPkax0GD4HuuxtRAmOIRj+1dXV1x2wXXAtQTq074ZOd7JmQ
+        500H0h0GkyDx3mvhOPmVHxsUcEQmnCctQBxxOS+0teMgsQi9mpMUek07cBm8gBx79ZSc56p15a1cUVHs
+        59ZmCxBXa2jBRcy1Sov8PGNpy2OW8UsKuOioT0NQ53sKhsAw5312z1fMFakUoNBaaTAfliacYSCPJ/Ik
+        nyuehy3LwfAMCR/kWnABHI83V6RagEK3Q1qmKW0/3LPyJL2qI+o7kE1inxbZ3KpIp4BYSFPa1oA2/Ci5
+        xlYKyEjsFLBTgHoGJi2YqWklFqDm0iKO0TMf5eXlB3iNrmD2CcS37iUay0d6SYM4Rs986F3G6DToxnQK
+        /DJMcfXdym35z8hGoWaCmR+8wniao6CxTzmjbTIc5x8k4rsn3grCGgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAA2xJREFUWEft
+        l0tIVFEcxmcqsxeRRSQRYRbRtoSgNknQ+BZdSBS0iEBwE2QPSYQmaVdQS7GFK1e6CRetWrVyY6SF1EYo
+        ehdFVPS23685U+N4x5xp3ER/+Dh37v873/fNnXPPvRPLt6qrq5c1NDTsbWxsTDIO1NfXDzCe95y9QFuY
+        amtrW4zhdsyvYvgIfAx45Dl7cgK9+MU3XIXJYQzvg29gOsDje/QOJRKJlYFe/KqpqVmLyVnMnmeYp/Hc
+        npxAL361trauw+QcZi+yzMULe3ICvfj1P8A/HyBeV1dX6mYS7uV46vTv+psAaoLlYOn09PQM7TgnVzU1
+        Ne0gQAI0sansRqw8BPlVhQRQQy011aYSermn/AzifUuzHoF+MAp5jM8jjCeam5u3QVwStPIO4Fw11AIj
+        6I7BG2Xs17OlpWVNjFT7aQ7TcHNxR/sOPoA7kHoyQ+QTIMO8h94doKbaerhpDbNr7o1x0MmJqdDIFPwC
+        JkE3Ibd6KecbQHPncK4bqKFWJtcgU/CPGsCETzOamfgM7oIufrctfKMNfwogRy6fu/jsXDWyueIJ6DDA
+        IQ4mwNfQyIYCXsKT/CS7GHtBZADQGzinwATaucz10rPZNeClugT5YWhETfiM8G04SXCFz7kCXJbDOD6X
+        OVoPGC/W1tZWxNrb20u4bDs50Qceg+y18BNBcJLJI4yvM3uC/pvQm5zDXG09+vjiO6uqqkpcsF6FUibv
+        oeHbjeshMgRwMb0MYz498Y1gzxgH9GKhznx7YuGsIMg+SIOQvJy5QhQCtVykg3roFWxnVJxUvvEcgDwE
+        XoWJUYL5wFtOrSG19dArZTm7fB6shmxdA6+ZpECU8HzgXNeLWg1q65Gyyl1xuGX8Tq2M18FbUEgI5zj3
+        etAqUztl8eeKu6OR+CCTbzD5fRCMMoqC3HfOBQfD9jxv83QtIsB6FswRRG4C9/IosyjIvelcNdRKSeZZ
+        yWRyEWugHLFjBBhl/BQM5oIcucfclpEpzDxdhkBoI4IdhPBxmjMEYd2AboEO5zg3yPxd+STkUm4iwHHg
+        ljxrp/McsHdcbtHM02UIzDdj4OM7+0Hj8QT9TjnZb1JFK4V9gGB+GvioddvV/C7GZ3jDqVgw83RpgGEl
+        hv5FGxfhuNIXkUBb2NKIW8yX2AsYX/C4MPNY7AeMK7j0qpvM1wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAblJREFUWEe9
+        l71KA1EQhRPBUkQE7YxYCgY0ddAiRX42C7EVH0CwFYON6dTOSkwv8QHEOiAiWIqlhICIhYX4AqLn4hHC
+        ZTZjMnc98GFY53yz2d1gzIybWq3WBn3S5uH/SbVaPcTSr0HcMf463WBRjkv7lUpl2eFe8yRyHAufRqMx
+        W6/X17GkyRPoerhjm+VyOY+fRczPsTp6oiha46I78Eb5OLyAe+dyTuqHB4XOgCA0Ha5JDoZ+L2cadLkm
+        OW7IK4VEPwHcq4004ZrkxHE8j4dmJQ2gz/5sGRI3KFy6IODNTXFNcnCZFqRyAD65YnhKpdK0UA7BO1eo
+        yQrlEPTp14PhD69sBs/WA/V6MPwsSYzcUK8Hw49e2Qwe7ivq9aBw6wsCcEG9Hgxfe+UQnFGvB8OXXtkM
+        bsER9XpQOPcFVvBgN6nXg+ETSWJkh3o9GD7wymZwC7ao14PhXUliAVc1ol4PhrcliZEi9XowHHtlM/hT
+        nKdej/v6LUks4Ov6IvV68M/GqiQxMkO9HgwveWUzrVZrgno9hUJhUpIYeKL678En4VQQjQVce9SOFpSP
+        UX71hSPQA/vUCclkvgEuknxEox67XAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAmdJREFUWEfF
+        Vz1LHFEU3R+QYBlCSm004A8wzRYL+70g1tuFdP6A2GyzkCDW24i9iGBjLxqw0V3IL1hIGwgmoK2eM56r
+        b2dn9r15QefAYXbuPfdjdt67M1MJRa1WW2q1Wn3wuNPpTHD81W63b0n+lu0Qx81er/dWYf8PFFgFR+AN
+        eB/IPyBjVpUmDkgwBP+CWUVCyNih0hUDAo+cRMYx/uJvOG40m83larX6huRv2uD7iuOltC4vlDYMCJim
+        E+D+bsntBbWMSeX4LfdiUJgK3JarMBC7k8o1lSsbEMx0jdW8Ilc0cHs+uTnBI7lmAQcX3JOQgXJlotvt
+        foTuAPwiUy54IW5ucHZhwsCt5q72HbkygebWXD0W365cuYBu2/QgY5+3KE64Z83pXbEouO/oE8L2Qe5c
+        MLcTM0qMnFo44eBIHCGrHZrPphev5VoI7Q6LueF05dVsOsZLab2A9rtirhqNxrrMXkA/Vhwvts+uDs3A
+        QSJdEOr1+nv9DAZqcJBZA8c0TMwAbkgXDF4FeKJTL1jD6rE2E/Cplhg4UqXzAvoaeKrYHzJ7obGd1GNt
+        JuIjNTFwrkuXCyzad+g8vQvO5faCNZy428INoOsBtHdo4qfFgWdyezHXQOwtQANVJ1FwA3O3IHYRxjbA
+        GhbH2tHbMLYBxM1tw6hBFNsAtLODKGYUEzENMLcT8ziKCZwUfRix+J4T8482uXPB3E7M48OIwEmhxzH8
+        Z472iXJnAv78xzEBQ/ALCf7KQRblnoP3hcQAR3mvZAYIynspNVCYCny913IDAsr7MDEgsLxPMwMSlPdx
+        6uJlPs8rlQcFBcGsIV6d4QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>questlists_manager is an application for editing MHF questlist files.
+Files are server-side file, usually located in the `Erupe/bin/questlists` folder.
+The questlists can contain up to 512 quests.
+Please keep in mind that this is still under development.</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAK3SURBVFhHxZa7TxRhFMXxkWABAQzg2kDsbHmYaEI0
+        ofB/ICFofAQ7CjQxFvwBNJQUBiobJBI7Y+mjsUMKCjEatTFqI0ZIxDieM55vudz5dpmdmcST/BL23nPP
+        HSb7zU5bXp3q6+8F18EDsAF+gETwb9bYo6dXY+WFsCGwAvZAWHgY9HJmSDGtC8Nd4D74A2JL8sBZZnQp
+        Np8wwP/6HYiFFoFZ+e4GjOPguwarhJnjWhMXDCMyxgKqgNkjWndQaPSA9zIGNsEjUOSiOMNZZtg6d/Ro
+        7b5QXDamwKR67YDH67Pq4dg9E/ZY0kNvu2YnVbcss1cXCqPOEBiWJRU+82ScBUdVqos19Q584/F5GMSy
+        R2VJTWuuGTgnS2Exw2UG1oKhBn6bhuVKaiohZrjMAHfWaJg2RcsncFI5hcUM8FGZnmka+MiMNa8po7SY
+        5bIDK2z6Y0J4e1p7fDYRs5Tp92yyueOK5INmKxMz3Q6yw4Yvki3NVSZkvnU7UhpdwLbmKhMz3Y6Uhg3Q
+        r9nSYpbLDmyzue6KgSnNlxazXHZgnc0lVwy8BseVUVjMUFZsxxINE65oWVBOYTHDZVomaOgEP03Rswpq
+        ysstzJzWbCyTcGdnMC+axjy4BJ6b2i/wENwE/OU8lg4aocZbfQHcAvxx40yYj7Go0XR4AOyqwRfJWcB3
+        gFeqWRh+RKN1sQYey3MY3DWg0X9CYc4YyHlwBvgfkjGNZITeRedtxJxG9oUib+FLY3qqejfgG849cBlk
+        bn8Qen3ALorBHfHThQbfDewjc0atXIKfF2uXeZjd/AsNwyDY0gB5Ae6Aq+AuOCFrRug1uwBmDsraXDDy
+        JeKJBj3dsmXEnvMGmNXayw0G+K2+Ab4AG9bKBXwFPLqZU5NbGO4APJZvwDeQvm7HxJ489N4GHWo1VpIk
+        /5Gk7S8Lp6cBadxETwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Questlists control mostly only the display at the reception desk. The actual quest-related matters (monsters, maps, rewards, etc.) are controlled by the quest file.
+
+For the first time only, it is very slow when switching to page 2.</value>
+  </data>
+  <data name="label27.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAURJREFUWEfF
+        l71KA0EUhdfKKpWVlWnS5Cns9peFfYE8RzoLQVCwEAQLQUkRSGdlkyZNQGwCyQvpd/UOyDApJLl7Dxw2
+        ZA77nWVmd2ezQ9U0zaX+7Fd1XbfAPzh+cdxWVXWlQ/0I4K3A/5r/rnXYXjE8mBI3GrGVgFIFxIzdacxO
+        ZVmOge1ieDDr4l6jdgIy4mo3qQJixh80aicKXAD7jOHBlHjUqJ3yPD8Hto7hwZR40qiduq47A7aK4cGU
+        eNaondq2HQBbxvBgSrxo1E7cHafA3mN4MGtmplFTnXC1b6kCYkrMNferoiiGDLximcNje1+JxQ+cppNU
+        oA9TYirP9L0te/DOv4D7FIhcF6GR/ncbHlOuDyLXR7Hry8j1dcyc+m1IOLnflsx9U8qV+27LU2CxFNOI
+        rQC5f5r5fpwGAT/g8zzLvgEicZ8PAVu+cAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label29.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAA25JREFUWEet
+        l01IVFEYhl1EEvRHEC3aFEZRi4gg27QYamqcX4ZiiDJEiIIiIUVp6UIlCMmNtCkIEloE0SaDgpASI0St
+        SIKIkIwIiiimlBaBPe/lO8M0dxrvzNwXXs453/8995xzz20IgkwmsyaZTObgILwNx+BbmIcLiURiPpVK
+        zdC/DwcYtzNuNvfakM1m1xPsHLwDl0r4C86RaJJ2Gn4xeSnHsOmMxWIbLGww4HgUvnaBCPKQtjsejx9h
+        NjaZ2T9A1wibePIItkNwzvnDWeStZloZGA47RxIPp9PpraaqGiqYOCMuHjxrqvKQgTOmkDYT1w3idRTF
+        jZjYDwwmzDBnotDAq9tmsSdM5AfV/WTaX9kwdCi2ctjQD6twzIahQ7GVw4Z+WAHiKROFBp7+hItvIj/M
+        wKsS3sVpv6lqRktLyxZiaVsWYpvKD2dE4mO07238iHEP726zmS2LSCSyGvsEvjehDq0XbMksbbAC1Mdh
+        I/3zzsnp4AjBL9NKl8EuzriVfgeF9tI+gYtQ9uPIunSqWvzgBRQD2U4CtdNeg+NwFn6CSvQbfoWasZdQ
+        SXupa5e5F4CutgLCQtACdATvMVFoUEwX30R+mIFXJQ49uVxupanqgr0+fbqDvQLYb/1pnPtg1duxdBET
+        Qws0WAHql2wjyd9YkNMwpkUG1zJLq7RF2e+7afUpHqB9TKsn/kz/luQWP3gBDnaQKOkNqNUvm3L8Az/A
+        ZyS8Ag9ZiALQVV9AKThkVmh6mY3tejUk2vu/S0opghaQdwdHmLArnl7LsgX8gFPchA6auG4wU9qCevrv
+        ymFiP6Q0w1H1md7rOKdMXTV4iH1aD8TK096z2MHWgK14t+g+qhgY4f03wUbPoQzQ6R7Yj78usvLV9f2i
+        dLTVL0LG+h8otwN0FdeV/Dl8B79BT0fySYrtgwcsjAd0yxagRTJlQx+02tFHoYrSBfYSybpIdFzJdIOu
+        NDuKDfM29AOlvnSVb641grgqWjM0biI/eJrDZrQU5i7ggdpcXFj53wDjC86Yfl27gFN0B/6FHx04ZKrK
+        ILFuOMWLLtAu0BqxXdANnxb5TyGPm1kw6IeS6jtx9lZuGXq7ABv9oOo/0H20CqTgB7Qd0Wh0nYWtDQRq
+        hmcIdhWO0p8h8Tz9Baido72uQvXrPojuZLCkDQ1/AcmCZEft9PA3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>The database is a file that stores only the information needed for questlists from the quest file.
+You can easily know the detail about each quests and add them to the list.
+It is not included in this repository and must be created by the user himself.
+The created database is automatically placed in the data folder.
+When creating, an option appears, and if you select yes, all quests in the folder will be read. This means that the same quests but slightly different, such as 22051d0 and 22051n2, will also be read. This will increase the size of the database.
+Normally, I think you should just choose no.
+
+The input box above the database is for searching quest names.</value>
+  </data>
+</root>
