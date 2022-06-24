@@ -4,16 +4,22 @@ This is basically the same as the previous version, with the following differenc
 - To be able to load more quests. Note that the game will only load a maximum of 512 quests.
 - Rename repository (as it is no longer just a reader).
 - Blank quests can be added(especially for CQ).
-- Quest files no longer need to be converted in ReFrontier in advance.
+//- Quest files no longer need to be converted in ReFrontier in advance.
 - Added the ability to swap the order of quests.
 - Changed the way to temporarily save loaded files (hope it works faster than before)
 
 # Build
 Put `data` and `output` folder in the same folder as the exe.
 
-# WIP things
-- Quest type
-- Equipment information
+# Usage
+1. If you want to use existing questlists, load it first.
+2. Quests can be added either from the quest file or from the database.
+When adding from a file, it must be decrypted with ReFrontier.
+For more information about database, see the following section.
+3. If you have made any changes to the quest information, save them using the Save button.
+4. After all work has been completed, create a file using the Export button.
+The file will be created in the `output` folder.
+5. The file should be placed in `Erupe/bin/questlists`.
 
 # What's database 
 The database is a file that stores only the information needed for questlists from the quest file.  
@@ -43,6 +49,10 @@ A message box appears. Normally, select no,
   
 5. Upon successful creation, the file is automatically placed in the data folder.  
 You will be asked if you want to continue loading the database, select yes if you want to use it.  
+
+# WIP things
+- Quest type
+- Equipment information
 
 # Misc.
 - Only the first time you try to switch to page 2, it is very slow for about 10 seconds. This is because it is adding a large number of weapon and armor names to the list.
