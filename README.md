@@ -4,7 +4,6 @@ This is basically the same as the previous version, with the following differenc
 - To be able to load more quests. Note that the game will only load a maximum of 512 quests.
 - Rename repository (as it is no longer just a reader).
 - Blank quests can be added(especially for CQ).
-//- Quest files no longer need to be converted in ReFrontier in advance.
 - Added the ability to swap the order of quests.
 - Changed the way to temporarily save loaded files (hope it works faster than before)
 
