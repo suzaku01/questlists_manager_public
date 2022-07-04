@@ -206,8 +206,8 @@ namespace questlists_manager
                     comQuestTypeA.Text = targetOA;
                     comQuestTypeB.Text = targetOB;
                     int targetM = BitConverter.ToUInt16(byteData, 52);
-                    int targetA = BitConverter.ToInt16(byteData, 60);
-                    int targetB = BitConverter.ToInt16(byteData, 68);
+                    int targetA = BitConverter.ToUInt16(byteData, 60);
+                    int targetB = BitConverter.ToUInt16(byteData, 68);
                     if (targetOM != "Deliver")
                     {
                         List.MonsterID.TryGetValue(targetM, out string targetIDM);
@@ -243,29 +243,29 @@ namespace questlists_manager
 
                     if (comQuestTypeM.SelectedIndex == 4 || comQuestTypeM.SelectedIndex == 5)
                     {
-                        numQuantityM.Value = BitConverter.ToInt16(byteData, 54) * 100;
+                        numQuantityM.Value = BitConverter.ToUInt16(byteData, 54) * 100;
                     }
                     else
                     {
-                        numQuantityM.Value = BitConverter.ToInt16(byteData, 54);
+                        numQuantityM.Value = BitConverter.ToUInt16(byteData, 54);
                     }
 
                     if (comQuestTypeA.SelectedIndex == 4 || comQuestTypeA.SelectedIndex == 5)
                     {
-                        numQuantityA.Value = BitConverter.ToInt16(byteData, 62) * 100;
+                        numQuantityA.Value = BitConverter.ToUInt16(byteData, 62) * 100;
                     }
                     else
                     {
-                        numQuantityA.Value = BitConverter.ToInt16(byteData, 62);
+                        numQuantityA.Value = BitConverter.ToUInt16(byteData, 62);
                     }
 
                     if (comQuestTypeB.SelectedIndex == 4 || comQuestTypeB.SelectedIndex == 5)
                     {
-                        numQuantityB.Value = BitConverter.ToInt16(byteData, 70) * 100;
+                        numQuantityB.Value = BitConverter.ToUInt16(byteData, 70) * 100;
                     }
                     else
                     {
-                        numQuantityB.Value = BitConverter.ToInt16(byteData, 70);
+                        numQuantityB.Value = BitConverter.ToUInt16(byteData, 70);
                     }
 
                     numMonsterIcon1.Value = byteData[185];
@@ -286,14 +286,14 @@ namespace questlists_manager
                     //textMonsterIcon5.Text = Icon5;
 
                     //Text
-                    int pTitleAndName = BitConverter.ToInt16(byteData, 320);
-                    int pMainoObj = BitConverter.ToInt16(byteData, 324);
-                    int pAObj = BitConverter.ToInt16(byteData, 328);
-                    int pBObj = BitConverter.ToInt16(byteData, 332);
-                    int pClearC = BitConverter.ToInt16(byteData, 336);
-                    int pFailC = BitConverter.ToInt16(byteData, 340);
-                    int pEmp = BitConverter.ToInt16(byteData, 344);
-                    int pText = BitConverter.ToInt16(byteData, 348);
+                    int pTitleAndName = BitConverter.ToUInt16(byteData, 320);
+                    int pMainoObj = BitConverter.ToUInt16(byteData, 324);
+                    int pAObj = BitConverter.ToUInt16(byteData, 328);
+                    int pBObj = BitConverter.ToUInt16(byteData, 332);
+                    int pClearC = BitConverter.ToUInt16(byteData, 336);
+                    int pFailC = BitConverter.ToUInt16(byteData, 340);
+                    int pEmp = BitConverter.ToUInt16(byteData, 344);
+                    int pText = BitConverter.ToUInt16(byteData, 348);
 
                     string tTitleAndName = Encoding.GetEncoding("Shift_JIS").GetString(byteData.Skip(pTitleAndName).Take(pMainoObj - pTitleAndName).ToArray()).Replace("\n", "\r\n");
                     textTitle.Text = tTitleAndName;
@@ -326,19 +326,19 @@ namespace questlists_manager
                     //Misc
                     numDifficulty.Value = byteData[4];
                     numQuestID.Value = BitConverter.ToUInt16(byteData, 46);
-                    numFee.Value = BitConverter.ToInt32(byteData, 12);
-                    numMainReward.Value = BitConverter.ToInt32(byteData, 16);
-                    numSubAReward.Value = BitConverter.ToInt32(byteData, 24);
-                    numSubBReward.Value = BitConverter.ToInt32(byteData, 28);
-                    numMainPoint.Value = BitConverter.ToInt32(byteData, 164);
-                    numSubAPoint.Value = BitConverter.ToInt32(byteData, 168);
-                    numSubBPoint.Value = BitConverter.ToInt32(byteData, 172);
-                    numReqMin.Value = BitConverter.ToInt16(byteData, 74);
-                    numReqMax.Value = BitConverter.ToInt16(byteData, 76);
-                    numReqHost.Value = BitConverter.ToInt16(byteData, 78);
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 176), out string Item1);
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 178), out string Item2);
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 180), out string Item3);
+                    numFee.Value = BitConverter.ToUInt32(byteData, 12);
+                    numMainReward.Value = BitConverter.ToUInt32(byteData, 16);
+                    numSubAReward.Value = BitConverter.ToUInt32(byteData, 24);
+                    numSubBReward.Value = BitConverter.ToUInt32(byteData, 28);
+                    numMainPoint.Value = BitConverter.ToUInt32(byteData, 164);
+                    numSubAPoint.Value = BitConverter.ToUInt32(byteData, 168);
+                    numSubBPoint.Value = BitConverter.ToUInt32(byteData, 172);
+                    numReqMin.Value = BitConverter.ToUInt16(byteData, 74);
+                    numReqMax.Value = BitConverter.ToUInt16(byteData, 76);
+                    numReqHost.Value = BitConverter.ToUInt16(byteData, 78);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 176), out string Item1);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 178), out string Item2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 180), out string Item3);
                     textItem1.Text = Item1;
                     textItem2.Text = Item2;
                     textItem3.Text = Item3;
@@ -350,8 +350,8 @@ namespace questlists_manager
                     {
                         comCourse.SelectedIndex = byteData[6];
                     }
-                    numTime.Value = BitConverter.ToInt32(byteData, 32) / 30/ 60;
-                    List.MapID.TryGetValue(BitConverter.ToInt16(byteData, 36), out string map);
+                    numTime.Value = BitConverter.ToUInt32(byteData, 32) / 30/ 60;
+                    List.MapID.TryGetValue(BitConverter.ToUInt16(byteData, 36), out string map);
                     comMap.Text = map;
                     comRest.SelectedIndex = byteData[44];
 
@@ -433,69 +433,69 @@ namespace questlists_manager
                     comSeason.SelectedIndex = num;
 
                     //Equipment
-                    List.LegsID.TryGetValue(BitConverter.ToInt16(byteData, 92), out string legs1);
+                    List.LegsID.TryGetValue(BitConverter.ToUInt16(byteData, 92), out string legs1);
                     textLegs1.Text = legs1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 94), out string legs2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 94), out string legs2);
                     textLegs2.Text = legs2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 96), out string legs3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 96), out string legs3);
                     textLegs3.Text = legs3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 98), out string legs4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 98), out string legs4);
                     textLegs4.Text = legs4;
-                    numLegs1.Value = BitConverter.ToInt16(byteData, 92);
+                    numLegs1.Value = BitConverter.ToUInt16(byteData, 92);
 
-                    List.MeleeID.TryGetValue(BitConverter.ToInt16(byteData, 100), out string melee1);
+                    List.MeleeID.TryGetValue(BitConverter.ToUInt16(byteData, 100), out string melee1);
                     textWep.Text = melee1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 102), out string melee2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 102), out string melee2);
                     textWep2.Text = melee2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 104), out string melee3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 104), out string melee3);
                     textWep3.Text = melee3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 106), out string melee4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 106), out string melee4);
                     textWep4.Text = melee4;
                     numWep1.Value = BitConverter.ToUInt16(byteData, 100);
 
-                    List.HeadID.TryGetValue(BitConverter.ToInt16(byteData, 108), out string head1);
+                    List.HeadID.TryGetValue(BitConverter.ToUInt16(byteData, 108), out string head1);
                     textHead1.Text = head1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 110), out string head2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 110), out string head2);
                     textHead2.Text = head2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 112), out string head3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 112), out string head3);
                     textHead3.Text = head3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 114), out string head4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 114), out string head4);
                     textHead4.Text = head4;
                     numHead1.Value = BitConverter.ToUInt16(byteData, 108);
 
-                    List.ChestID.TryGetValue(BitConverter.ToInt16(byteData, 116), out string chest1);
+                    List.ChestID.TryGetValue(BitConverter.ToUInt16(byteData, 116), out string chest1);
                     textChest1.Text = chest1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 118), out string chest2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 118), out string chest2);
                     textChest2.Text = chest2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 120), out string chest3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 120), out string chest3);
                     textChest3.Text = chest3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 122), out string chest4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 122), out string chest4);
                     textChest4.Text = chest4;
-                    numChest1.Value = BitConverter.ToInt16(byteData, 116);
+                    numChest1.Value = BitConverter.ToUInt16(byteData, 116);
 
-                    List.ArmsID.TryGetValue(BitConverter.ToInt16(byteData, 124), out string arms1);
+                    List.ArmsID.TryGetValue(BitConverter.ToUInt16(byteData, 124), out string arms1);
                     textArms1.Text = arms1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 126), out string arms2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 126), out string arms2);
                     textArms2.Text = arms2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 128), out string arms3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 128), out string arms3);
                     textArms3.Text = arms3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 130), out string arms4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 130), out string arms4);
                     textArms4.Text = arms4;
-                    numArms1.Value = BitConverter.ToInt16(byteData, 124);
+                    numArms1.Value = BitConverter.ToUInt16(byteData, 124);
 
-                    List.WaistID.TryGetValue(BitConverter.ToInt16(byteData, 132), out string waist1);
+                    List.WaistID.TryGetValue(BitConverter.ToUInt16(byteData, 132), out string waist1);
                     textWaist1.Text = waist1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 134), out string waist2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 134), out string waist2);
                     textWaist2.Text = waist2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 136), out string waist3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 136), out string waist3);
                     textWaist3.Text = waist3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 138), out string waist4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 138), out string waist4);
                     textWaist4.Text = waist4;
-                    numWaist1.Value = BitConverter.ToInt16(byteData, 132);
+                    numWaist1.Value = BitConverter.ToUInt16(byteData, 132);
 
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 148), out string item);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 148), out string item);
                     textItemReqName.Text = item;
-                    numItemReqID.Value = BitConverter.ToInt16(byteData, 148);
+                    numItemReqID.Value = BitConverter.ToUInt16(byteData, 148);
                     numItemReqQua.Value = byteData[150];
                 }
             }
@@ -506,7 +506,7 @@ namespace questlists_manager
             if (listQuest.Items.Count != 0)
             {
                 byte[] questEnd1 = { 18, 131, 89, 137, 91, 131, 58, 88, 182, 142, 89, 130, 204, 131, 88, 131, 88, 131, 129, 44, 151, 05, 65, 00, 00 };
-                byte[] questEnd2 = { 0,0 };
+                byte[] questEnd2 = { 0 }; //0,0
                 byte[] header = { 00, 42, 13, 125, 143, 204, 00, 00 };
                 byte[] fileEnd = File.ReadAllBytes("data/end.bin");
                 int questCount = 0;
@@ -2004,8 +2004,8 @@ namespace questlists_manager
                     comQuestTypeA.Text = targetOA;
                     comQuestTypeB.Text = targetOB;
                     int targetM = BitConverter.ToUInt16(byteData, 52);
-                    int targetA = BitConverter.ToInt16(byteData, 60);
-                    int targetB = BitConverter.ToInt16(byteData, 68);
+                    int targetA = BitConverter.ToUInt16(byteData, 60);
+                    int targetB = BitConverter.ToUInt16(byteData, 68);
                     if (targetOM != "Deliver")
                     {
                         List.MonsterID.TryGetValue(targetM, out string targetIDM);
@@ -2041,29 +2041,29 @@ namespace questlists_manager
 
                     if (comQuestTypeM.SelectedIndex == 4 || comQuestTypeM.SelectedIndex == 5)
                     {
-                        numQuantityM.Value = BitConverter.ToInt16(byteData, 54) * 100;
+                        numQuantityM.Value = BitConverter.ToUInt16(byteData, 54) * 100;
                     }
                     else
                     {
-                        numQuantityM.Value = BitConverter.ToInt16(byteData, 54);
+                        numQuantityM.Value = BitConverter.ToUInt16(byteData, 54);
                     }
 
                     if (comQuestTypeA.SelectedIndex == 4 || comQuestTypeA.SelectedIndex == 5)
                     {
-                        numQuantityA.Value = BitConverter.ToInt16(byteData, 62) * 100;
+                        numQuantityA.Value = BitConverter.ToUInt16(byteData, 62) * 100;
                     }
                     else
                     {
-                        numQuantityA.Value = BitConverter.ToInt16(byteData, 62);
+                        numQuantityA.Value = BitConverter.ToUInt16(byteData, 62);
                     }
 
                     if (comQuestTypeB.SelectedIndex == 4 || comQuestTypeB.SelectedIndex == 5)
                     {
-                        numQuantityB.Value = BitConverter.ToInt16(byteData, 70) * 100;
+                        numQuantityB.Value = BitConverter.ToUInt16(byteData, 70) * 100;
                     }
                     else
                     {
-                        numQuantityB.Value = BitConverter.ToInt16(byteData, 70);
+                        numQuantityB.Value = BitConverter.ToUInt16(byteData, 70);
                     }
 
                     numMonsterIcon1.Value = byteData[185];
@@ -2124,19 +2124,19 @@ namespace questlists_manager
                     //Misc
                     numDifficulty.Value = byteData[4];
                     numQuestID.Value = BitConverter.ToUInt16(byteData, 46);
-                    numFee.Value = BitConverter.ToInt32(byteData, 12);
-                    numMainReward.Value = BitConverter.ToInt32(byteData, 16);
-                    numSubAReward.Value = BitConverter.ToInt32(byteData, 24);
-                    numSubBReward.Value = BitConverter.ToInt32(byteData, 28);
-                    numMainPoint.Value = BitConverter.ToInt32(byteData, 164);
-                    numSubAPoint.Value = BitConverter.ToInt32(byteData, 168);
-                    numSubBPoint.Value = BitConverter.ToInt32(byteData, 172);
-                    numReqMin.Value = BitConverter.ToInt16(byteData, 74);
-                    numReqMax.Value = BitConverter.ToInt16(byteData, 76);
-                    numReqHost.Value = BitConverter.ToInt16(byteData, 78);
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 176), out string Item1);
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 178), out string Item2);
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 180), out string Item3);
+                    numFee.Value = BitConverter.ToUInt32(byteData, 12);
+                    numMainReward.Value = BitConverter.ToUInt32(byteData, 16);
+                    numSubAReward.Value = BitConverter.ToUInt32(byteData, 24);
+                    numSubBReward.Value = BitConverter.ToUInt32(byteData, 28);
+                    numMainPoint.Value = BitConverter.ToUInt32(byteData, 164);
+                    numSubAPoint.Value = BitConverter.ToUInt32(byteData, 168);
+                    numSubBPoint.Value = BitConverter.ToUInt32(byteData, 172);
+                    numReqMin.Value = BitConverter.ToUInt16(byteData, 74);
+                    numReqMax.Value = BitConverter.ToUInt16(byteData, 76);
+                    numReqHost.Value = BitConverter.ToUInt16(byteData, 78);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 176), out string Item1);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 178), out string Item2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 180), out string Item3);
                     textItem1.Text = Item1;
                     textItem2.Text = Item2;
                     textItem3.Text = Item3;
@@ -2148,8 +2148,8 @@ namespace questlists_manager
                     {
                         comCourse.SelectedIndex = byteData[6];
                     }
-                    numTime.Value = BitConverter.ToInt32(byteData, 32) / 30 / 60;
-                    List.MapID.TryGetValue(BitConverter.ToInt16(byteData, 36), out string map);
+                    numTime.Value = BitConverter.ToUInt32(byteData, 32) / 30 / 60;
+                    List.MapID.TryGetValue(BitConverter.ToUInt16(byteData, 36), out string map);
                     comMap.Text = map;
                     comRest.SelectedIndex = byteData[44];
 
@@ -2231,69 +2231,69 @@ namespace questlists_manager
                     comSeason.SelectedIndex = num;
 
                     //Equipment
-                    List.LegsID.TryGetValue(BitConverter.ToInt16(byteData, 92), out string legs1);
+                    List.LegsID.TryGetValue(BitConverter.ToUInt16(byteData, 92), out string legs1);
                     textLegs1.Text = legs1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 94), out string legs2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 94), out string legs2);
                     textLegs2.Text = legs2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 96), out string legs3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 96), out string legs3);
                     textLegs3.Text = legs3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 98), out string legs4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 98), out string legs4);
                     textLegs4.Text = legs4;
-                    numLegs1.Value = BitConverter.ToInt16(byteData, 92);
+                    numLegs1.Value = BitConverter.ToUInt16(byteData, 92);
 
-                    List.MeleeID.TryGetValue(BitConverter.ToInt16(byteData, 100), out string melee1);
+                    List.MeleeID.TryGetValue(BitConverter.ToUInt16(byteData, 100), out string melee1);
                     textWep.Text = melee1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 102), out string melee2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 102), out string melee2);
                     textWep2.Text = melee2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 104), out string melee3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 104), out string melee3);
                     textWep3.Text = melee3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 106), out string melee4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 106), out string melee4);
                     textWep4.Text = melee4;
                     numWep1.Value = BitConverter.ToUInt16(byteData, 100);
 
-                    List.HeadID.TryGetValue(BitConverter.ToInt16(byteData, 108), out string head1);
+                    List.HeadID.TryGetValue(BitConverter.ToUInt16(byteData, 108), out string head1);
                     textHead1.Text = head1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 110), out string head2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 110), out string head2);
                     textHead2.Text = head2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 112), out string head3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 112), out string head3);
                     textHead3.Text = head3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 114), out string head4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 114), out string head4);
                     textHead4.Text = head4;
                     numHead1.Value = BitConverter.ToUInt16(byteData, 108);
 
-                    List.ChestID.TryGetValue(BitConverter.ToInt16(byteData, 116), out string chest1);
+                    List.ChestID.TryGetValue(BitConverter.ToUInt16(byteData, 116), out string chest1);
                     textChest1.Text = chest1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 118), out string chest2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 118), out string chest2);
                     textChest2.Text = chest2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 120), out string chest3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 120), out string chest3);
                     textChest3.Text = chest3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 122), out string chest4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 122), out string chest4);
                     textChest4.Text = chest4;
-                    numChest1.Value = BitConverter.ToInt16(byteData, 116);
+                    numChest1.Value = BitConverter.ToUInt16(byteData, 116);
 
-                    List.ArmsID.TryGetValue(BitConverter.ToInt16(byteData, 124), out string arms1);
+                    List.ArmsID.TryGetValue(BitConverter.ToUInt16(byteData, 124), out string arms1);
                     textArms1.Text = arms1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 126), out string arms2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 126), out string arms2);
                     textArms2.Text = arms2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 128), out string arms3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 128), out string arms3);
                     textArms3.Text = arms3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 130), out string arms4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 130), out string arms4);
                     textArms4.Text = arms4;
-                    numArms1.Value = BitConverter.ToInt16(byteData, 124);
+                    numArms1.Value = BitConverter.ToUInt16(byteData, 124);
 
-                    List.WaistID.TryGetValue(BitConverter.ToInt16(byteData, 132), out string waist1);
+                    List.WaistID.TryGetValue(BitConverter.ToUInt16(byteData, 132), out string waist1);
                     textWaist1.Text = waist1;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 134), out string waist2);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 134), out string waist2);
                     textWaist2.Text = waist2;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 136), out string waist3);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 136), out string waist3);
                     textWaist3.Text = waist3;
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 138), out string waist4);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 138), out string waist4);
                     textWaist4.Text = waist4;
-                    numWaist1.Value = BitConverter.ToInt16(byteData, 132);
+                    numWaist1.Value = BitConverter.ToUInt16(byteData, 132);
 
-                    List.ItemID.TryGetValue(BitConverter.ToInt16(byteData, 148), out string item);
+                    List.ItemID.TryGetValue(BitConverter.ToUInt16(byteData, 148), out string item);
                     textItemReqName.Text = item;
-                    numItemReqID.Value = BitConverter.ToInt16(byteData, 148);
+                    numItemReqID.Value = BitConverter.ToUInt16(byteData, 148);
                     numItemReqQua.Value = byteData[150];
                 }
             }
