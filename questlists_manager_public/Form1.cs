@@ -505,8 +505,9 @@ namespace questlists_manager
         {
             if (listQuest.Items.Count != 0)
             {
-                byte[] questEnd1 = { 18, 131, 89, 137, 91, 131, 58, 88, 182, 142, 89, 130, 204, 131, 88, 131, 88, 131, 129, 44, 151, 05, 65, 00, 00 };
-                byte[] questEnd2 = { 00,00}; //0,0
+                byte[] endNormal = { 18, 131, 89, 137, 91, 131, 58, 88, 182, 142, 89, 130, 204, 131, 88, 131, 88, 131, 129, 44, 151, 05, 65, 00, 00 };  //一番最後以外のクエストの最後
+                byte[] end1 = { 00 }; //通常のファイルの一番最後のクエスト
+                byte[] end2 = { 00,00}; //一番最後のファイルの一番最後のクエスト
                 byte[] header = { 00, 42, 13, 125, 143, 204, 00, 00 };
                 byte[] fileEnd = File.ReadAllBytes("data/end.bin");
                 int questCount = 0;
@@ -546,12 +547,12 @@ namespace questlists_manager
                             if (u != count - 1)
                             {
                                 by.AddRange(quest);
-                                by.AddRange(questEnd1);
+                                by.AddRange(endNormal);
                             }
                             else        //最後のみ
                             {
                                 by.AddRange(quest);
-                                by.AddRange(questEnd2);
+                                by.AddRange(end1);
                                 by.AddRange(fileEnd);
                                 int val = questCount - count + 1;
                                 string path = "output/" + "list_" + val.ToString() + ".bin";
@@ -562,7 +563,7 @@ namespace questlists_manager
                         }
                     }
                     else
-                    {
+                    {       //一番最後のファイル
                         var by = new List<byte>();
                         if (rest != 0)
                         {
@@ -585,12 +586,12 @@ namespace questlists_manager
                                 if (u != rest - 1)
                                 {
                                     by.AddRange(quest);
-                                    by.AddRange(questEnd1);
+                                    by.AddRange(endNormal);
                                 }
                                 else
                                 {
                                     by.AddRange(quest);
-                                    by.AddRange(questEnd2);
+                                    by.AddRange(end2);
                                     by.AddRange(fileEnd);
                                 }
                                 questCount = questCount + 1;
