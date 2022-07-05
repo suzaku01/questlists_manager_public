@@ -81,3 +81,13 @@ You will be asked if you want to continue loading the database, select yes if yo
 ## 1.21
 - Window size can be changed.
 - Fixed an issue where an error message was displayed twice when a database file could not be found.
+
+## 1.21a
+- If you have added more than 42 quests and are having problems with the game not loading all of them, please use this one.
+(For those who have problems loading quests.)
+
+## 1.22
+- Fixed a problem with some quests not loading properly.
+
+## 1.23
+- Changed the byte array added at the end of the quest to function properly.
