@@ -506,7 +506,7 @@ namespace questlists_manager
             if (listQuest.Items.Count != 0)
             {
                 byte[] questEnd1 = { 18, 131, 89, 137, 91, 131, 58, 88, 182, 142, 89, 130, 204, 131, 88, 131, 88, 131, 129, 44, 151, 05, 65, 00, 00 };
-                byte[] questEnd2 = { 0 }; //0,0
+                byte[] questEnd2 = { 00,00}; //0,0
                 byte[] header = { 00, 42, 13, 125, 143, 204, 00, 00 };
                 byte[] fileEnd = File.ReadAllBytes("data/end.bin");
                 int questCount = 0;
