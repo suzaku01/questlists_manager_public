@@ -56,6 +56,9 @@ You will be asked if you want to continue loading the database, select yes if yo
 # Misc.
 - Only the first time you try to switch to page 2, it is very slow for about 10 seconds. This is because it is adding a large number of weapon and armor names to the list.
 
+# Known issues
+- If a particular quest is at the end of the list, the game may not load all the quests correctly. (Currently under investigation)
+
 # Credits
 - SephVII
 - Malckyor
